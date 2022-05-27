@@ -2,7 +2,7 @@
     "assets": [
         "./favicon.ico",
         "./src/assets",
-        "./src/manifest.json"
+        "./src/assets/manifest.json"
     ],
 
     "name":"#HeroesMCandDC",
