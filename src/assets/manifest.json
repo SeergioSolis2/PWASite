@@ -1,10 +1,5 @@
 {   
-    "assets": [
-        "./favicon.ico",
-        "./src/assets",
-        "./src/assets/manifest.json"
-    ],
-
+  
     "name":"#HeroesMCandDC",
     "short_name":"#HeroesMCandDC",
     "description":"BIENVENIDO AL MUNDO DE LOS COMICS :D, Aqui encontraras la informacion de todas tus historietas y superhéroes favoritos.",
