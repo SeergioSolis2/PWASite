@@ -1,0 +1,27 @@
+{   
+    "assets": [
+        "./src/favicon.ico",
+        "./src/assets",
+        "./src/manifest.json"
+    ],
+
+    "name":"#HeroesMCandDC",
+    "short_name":"#HeroesMCandDC",
+    "description":"BIENVENIDO AL MUNDO DE LOS COMICS :D, Aqui encontraras la informacion de todas tus historietas y superhéroes favoritos.",
+    "background_color":"#2B2B2B",
+    "Theme_color":"#AA1F02",
+    "orientation":"portrait",
+    "display":"standalone",
+    "start_url":"./?utm_source=web_app_manifest",
+    "scope":"./",
+    "lang":"es-MX",
+    "icons":[
+        
+        {
+            "src":"./img/A-64.png",
+            "sizes":"256x256",
+            "type":"image/png"
+        }
+        
+    ]
+}
