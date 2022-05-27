@@ -1,6 +1,6 @@
 {   
     "assets": [
-        "./src/favicon.ico",
+        "./favicon.ico",
         "./src/assets",
         "./src/manifest.json"
     ],
