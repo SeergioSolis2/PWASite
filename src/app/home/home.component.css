@@ -1,0 +1,36 @@
+
+h1 {
+    font-family: 'Wigglye', sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+p{
+    font-family: 'KG Corner of the Sky', sans-serif;                                            
+    font-size: 15px;
+    text-align: justify;
+}
+
+.jumbotron{
+    background-color: rgb(241, 122, 122);
+    border: 5px solid black;
+    border-radius: 25px;
+}
+
+label{
+    font-family: 'KG Corner of the Sky', sans-serif;                                            
+    font-size: 15px;
+    text-align: justify;
+}
+
+input{
+    font-family: 'KG Corner of the Sky', sans-serif;                                            
+    font-size: 15px;
+    text-align: justify;
+}
+
+select{
+    font-family: 'KG Corner of the Sky', sans-serif;                                            
+    font-size: 15px;
+    text-align: justify;
+}
+

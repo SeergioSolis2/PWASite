@@ -1,0 +1,29 @@
+div{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.img-fluid{
+    max-width: 50%;
+}
+
+#Encabezado {
+    font-family: 'Wigglye', sans-serif;
+    font-size: 75px;
+    
+}
+
+#txt{
+    font-family: 'KG Corner of the Sky', sans-serif;                                            
+    font-size: 15px;
+    text-align: justify;
+    
+}
+
+#txt1{
+    font-family: 'KG Corner of the Sky', sans-serif;                                            
+    font-size: 15px;
+    text-align: justify;
+    
+}

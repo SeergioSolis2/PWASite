@@ -1,0 +1,8 @@
+@media only screen and (min-width: 321px) and (max-width: 1280px){
+    ul{
+        text-align: center;
+    }
+    .form-inline{display: flex;
+    justify-content: center; 
+    align-items: center; }
+}
