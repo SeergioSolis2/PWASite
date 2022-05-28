@@ -1,20 +1,46 @@
-// Change this to your repository name
-var GHPATH = '/github-page-pwa';
- 
-// Choose a different app prefix name
-var APP_PREFIX = 'gppwa_';
- 
-// The version of the cache. Every time you change any of the files
-// you need to change this version (version_01, version_02…). 
-// If you don't change the version, the service worker will give your
-// users the old files!
-var VERSION = 'version_00';
- 
-// The files to make available for offline use. make sure to add 
-// others to this list
-var URLS = [    
-  `${GHPATH}/`,
-  `${GHPATH}/index.html`,
-  `${GHPATH}/styles.css`,
-  `${GHPATH}/assets/sw.js`
+const CACHE_NAME='v1_cache_programaHeroes',
+urlsToCache=[
+    './',
+    './styles.css',
+    './script.js',
+    './favicon.ico'
 ]
+
+self.addEventListener('install',e=>{
+    e.waitUntil(
+        caches.open(CACHE_NAME)
+        .then(cache=>{
+            return cache.addAll(urlsToCache)
+            .then(()=>self.skipWaiting())
+        })
+        .catch(err=>console.log("Fallo de cache",err))
+    )
+})
+
+self.addEventListener('activate',e=>{
+    const cacheWhitelist=[CACHE_NAME]
+
+    e.waitUntil(
+        caches.keys()
+        .then(cachesNames=>{
+            cachesNames.map(cacheName=>{
+                if(cacheWhitelist.indexOf(cacheName)===-1){
+                    return caches.delete(cacheName)
+                }
+            })
+        })
+        .then(()=>self.clients.claim())
+    )
+})
+
+self.addEventListener('fetch',e=>{
+    e.respondWith(
+        caches.match(e.request)
+        .then(res=>{
+            if(res){
+                return res
+            }
+            return fetch(e.request)
+        })
+    )
+})
