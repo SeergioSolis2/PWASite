@@ -9,13 +9,13 @@
   <link href="http://fonts.cdnfonts.com/css/wigglye" rel="stylesheet">       
   <link href="http://fonts.cdnfonts.com/css/kg-corner-of-the-sky" rel="stylesheet">                  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
   
   <!--PWA ICON-->
   <link rel="apple-touch-icon" href="favicon.ico">
   <link rel="apple-touch-startup-image" href="favicon.ico">
   <link rel="canonical" href="https://seergiosolis2.github.io/github-page-pwa/" />
-  <link rel="manifest" href="/github-page-pwa/src/assets/manifest.webmanifest">
+  <link rel="manifest" href="/github-page-pwa/manifest.webmanifest">
 </head>
 <body>
   <app-root></app-root>
@@ -28,7 +28,7 @@
   <script>
     if (navigator.serviceWorker) {
       navigator.serviceWorker.register (
-        '/github-page-pwa/src/assets/sw.js',
+        '/github-page-pwa/sw.js',
         {scope: '/github-page-pwa/'}
       )
     }
