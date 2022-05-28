@@ -1,4 +1,9 @@
 {
+    "assets": [
+        "src/favicon.ico",
+        "src/assets",
+        "src/assets/manifest.webmanifest"
+    ],
    
     "name": "HeroesMCandDC",
     "short_name": "HeroesMCandDC",
@@ -23,4 +28,6 @@
           "sizes": "256x256"
         }
     ]
+
+  
   }
